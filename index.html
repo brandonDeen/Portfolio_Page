@@ -5,9 +5,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Brandon L. Deen</title>
+	<title>Brandon's Portfolio</title>
 
-	<link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/site.css">
 
@@ -18,7 +18,13 @@
 	<div class="container">
 		<!-- header -->
 		<div class="row">
-			
+			<div class="col-md-2">
+				<img class="img-responsive title-logo" src="http://placehold.it/150x150" alt="my picture">
+			</div>
+			<div class="col-md-10 text-right text-uppercase text-thin">
+				<h1>Brandon Deen</h1>
+				<h4>Software Engineer</h4>
+			</div>
 		</div>
 		<!-- hr will go here -->
 		<div class="row">
@@ -28,15 +34,31 @@
 		</div>
 		<!-- top project image -->
 		<div class="row">
-			Top Project
+			<img class="img-responsive" src="http://placehold.it/1600x800" alt="project 1" data-toggle="modal" data-target="#project1">
 		</div>
 		<!-- Featured work heading -->
 		<div class="row">
-			Featured Work
+			<div class="col-md-12 text-muted">
+				<h2>Featured Work</h2>
+			</div>
 		</div>
 		<!-- feature work -->
-		<div class="row">
-			Featured work image, description, github url
+		<div class="row text-center">
+			<div class="col-md-4">
+				<img class="img-responsive featured-work" src="http://placehold.it/300x150" alt="project 2">
+				<h3 class="text-uppercase">Project 2</h3>
+				<a href=""><h4>github url 2</h4></a>
+			</div>
+			<div class="col-md-4">
+				<img class="img-responsive featured-work" src="http://placehold.it/300x150" alt="project 3">
+				<h3 class="text-uppercase">Project 3</h3>
+				<a href=""><h4>github url 3</h4></a>
+			</div>
+			<div class="col-md-4">
+				<img class="img-responsive featured-work" src="http://placehold.it/300x150" alt="project 4">
+				<h3 class="text-uppercase">Project 4</h3>
+				<a href=""><h4>github url 4</h4></a>
+			</div>
 		</div>
 		<!-- hr will go here -->
 		<div class="row">
@@ -46,20 +68,31 @@
 		</div>
 		<!-- footer -->
 		<div class="row">
-			
+			<div class="col-md-12">
+				<h3 class="text-muted">Wanna see more?</h3>
+				<p>Check out my <a href="https://github.com/brandonDeen">Github</a> </p>
+			</div>
 		</div>
 	</div>
 
 	<!-- modal top project -->
-	<div class="modal fade"></div>
-
-	<!-- modal featured project left -->
-	<div class="modal fade"></div>
-
-	<!-- modal featured project center -->
-	<div class="modal fade"></div>
-
-	<!-- modal featured project right -->
-	<div class="modal fade"></div>
+	<div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="Project 1 Label" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					Project 1 Title
+				</div>
+				<div class="modal-body">
+					<ul>
+						<li><h4>Description</h4>: This project is a portfolio using HTML, CSS, and Bootstrap</li>
+						<li><a href="#"><h4>Github URL</h4></a></li>
+					</ul>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
